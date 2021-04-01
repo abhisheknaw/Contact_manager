@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="base::layout(~{::section})" >
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+</head>
+<body>
+	<section>
+	<div class="container">
+		<div class="row">
+			
+			<div class="col-md-8 offset-md-2">
+			
+				<div class="my-card">
+				
+				<h1 class="text-center">Register Here!!</h1> 
+				
+				<form action="" th:action="@{/do_register}" method="post">
+				
+					<!-- name field -->
+					
+					<div class="form-group">
+					
+					    <label for="name_field">Your Name</label>
+					    
+					    <input 
+					    type="text" 
+					    class="form-control" 
+					    id="name_field" 
+					    aria-describedby="emailHelp"
+					    placeholder="Enter here"
+					    required
+					    />
+					    
+					
+					</div>
+					
+					
+					<!-- email field -->
+					
+					<div class="form-group">
+					
+					    <label for="email_field">Your Email</label>
+					    
+					    <input 
+					    type="email" 
+					    class="form-control" 
+					    id="email_field" 
+					    aria-describedby="emailHelp"
+					    placeholder="Enter here"
+					    required
+					    />
+					    
+					
+					</div>
+					
+					
+					<!-- password field -->
+					
+					<div class="form-group">
+					
+					    <label for="password_field">Your Password</label>
+					    
+					    <input 
+					    type="password" 
+					    class="form-control" 
+					    id="password_field" 
+					    aria-describedby="emailHelp"
+					    placeholder="Enter here"
+					    required
+					    />
+					    
+					
+					</div>
+					
+					<!-- about field -->
+					
+					<div class="form-group">
+					
+						<textarea placeholder="Enter something about yourself." cols="95" rows="10" class="form_control">
+						
+						</textarea>
+					
+					</div>
+				
+				</form>
+				
+				</div>
+			
+			</div>
+		
+		</div>
+	</div>
+	</section>
+</body>
+</html>
